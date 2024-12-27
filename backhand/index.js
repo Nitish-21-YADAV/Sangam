@@ -11,7 +11,7 @@ const {LoginValidate} = require('./scr/controller/SignUpValidate.js')
 const {addToHistory,getUserHistory}= require('./scr/controller/SignUpValidate.js')
 const {UserModel}= require('./scr/model/UserModel.js')
 const bodyParser = require("body-parser");
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken'); 
 
     
