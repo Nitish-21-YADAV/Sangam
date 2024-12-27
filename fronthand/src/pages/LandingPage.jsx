@@ -32,7 +32,7 @@ function LandingPage() {
                     <button onClick={handleSubmit}>Get Started</button>
                 </div>
                 <div className="LandingPageMainContent-right">
-                    <img src='/public/mobile.png'/>
+                    <img src='/mobile.png'/>
                 </div>
             </div>
         </div>

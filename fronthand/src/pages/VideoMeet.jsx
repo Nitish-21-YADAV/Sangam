@@ -15,12 +15,6 @@ import '../styles/Polling.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 let server_url = `${import.meta.env.VITE_BACKEND_URL}`;
-    // const urlll =`${process.env.REACT_APP_BACKEND_URL}`
-
-    // console.log("URLLL:",urlll);
-    
-    const backendUrl =import.meta.env.VITE_BACKEND_URL;
-    console.log("backendUrl:",backendUrl);
 
 var connections = {}
 const peerConfigConnections = {

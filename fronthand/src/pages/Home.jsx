@@ -79,7 +79,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="right-com">
-                    <img src='/public/Bg-3-Photoroom.png' alt='Check Internet connection'></img>
+                    <img src='/Bg-3-Photoroom.png' alt='Check Internet connection'></img>
 
                 </div>
             </div>

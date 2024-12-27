@@ -5,15 +5,15 @@ import { useNavigate } from 'react-router-dom';
 function History() {
     const [historyData, setHistoryData] = useState([]);
     const email = localStorage.getItem("email")
-    
+
     const navigate = useNavigate();
-  
+
     useEffect(() => {
         const fetchHistory = async () => {
             try {
                 const url = `${import.meta.env.VITE_BACKEND_URL}/getUserHistory/${email}`
                 const response = await fetch(url);
-                const data = await response.json();        
+                const data = await response.json();
                 setHistoryData(data)
             } catch (error) {
                 console.log(error);
@@ -24,7 +24,7 @@ function History() {
 
     }, [])
 
-    
+
     return (
         <div className='home'>
             <nav>
@@ -40,30 +40,27 @@ function History() {
                 <h1>History</h1>
                 <p>Explore the past meetings and sessions that have shaped our journey. Each entry represents a step towards growth, collaboration, and achievement.</p>
                 <div className='history-main-conatiner'>
-                <table >
-                    <tr>
-                        <th>Meeting Code</th>
-                        <th>Date</th>
-                    </tr>    
-                    <hr />
-                </table>    
-                <div className='history-data'>
-                    {historyData.map((item)=>{
-                        return(
-                            <tr key={item._id}>
-                                <td >{item.meetingCode}</td>
-                                <td> {item.date}</td>
-                            </tr>
-                            
-                        )
-                    })}
-                </div>
+                    <table >
+                        <tr>
+                            <th>Meeting Code</th>
+                            <th>Date</th>
+                        </tr>
+                        <hr />
+                    </table>
+                    <div className='history-data'>
+                        {historyData.map((item) => {
+                            return (
+                                <tr key={item._id}>
+                                    <td >{item.meetingCode}</td>
+                                    <td> {item.date}</td>
+                                </tr>
+
+                            )
+                        })}
+                    </div>
                 </div>
 
             </div>
-            
-
-
         </div>
     );
 }
