@@ -1,0 +1,99 @@
+.home{
+    height: 100vh;
+    width: 100vw;
+    border:2px solid white;
+    overflow: scroll;
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(17, 17, 20);
+  }
+nav{
+    padding: 1rem 3rem;
+    width: 90%;
+    background-color:"";
+    height:max-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top:0.77rem;
+    background-color:rgba(31, 31, 31, 0.8);
+    border-radius: 30px;
+}
+.nav-Lfet{
+    display: flex;
+    justify-content:space-between;
+    gap:2rem;
+    margin: auto 0;
+}
+.nav-Lfet button{
+    padding: 0.4rem 0.9rem;
+}
+.history-container {
+    width: 40%;
+    height: max-content;
+    margin: 30px auto;
+    background:linear-gradient(135deg, #ff7300, #ffbd69);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-container h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.history-main-conatiner{
+    width: 100%;
+    background-color: #1c1a1a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #000000;
+}
+
+table th, table td {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ffffff;
+    
+}
+
+table th {
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    
+}
+
+table td {
+    font-size: 1rem;
+    color: #333;
+    background-color: #000000;
+}
+
+table tr:hover {
+    background-color: #363636;
+}
+.history-container p {
+    text-align: center;
+   
+    color: #000000;
+    margin-bottom:1.77rem ;
+}
+@media (max-width:768px){
+    .history-container{
+        width: 90%;
+    }
+    table th{
+        font-size: 1rem;
+    }
+    .history-data,table td{
+        font-size: 0.8rem;
+    }
+}

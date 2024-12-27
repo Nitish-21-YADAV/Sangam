@@ -1,0 +1,102 @@
+   *{
+    color: white;
+    padding: 0;
+    margin: 0;
+    
+}
+   .Polling-Conatiner{
+    width:100%;
+
+   }
+   .Polling-Main-Conatiner{
+    width:90%;
+    height:max-content;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    font-size: 0.7rem;
+    align-items: center;
+   }
+   .Output-conatiner{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+    margin: 1rem;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+   }
+   .seleceAddValue{
+        margin: 0 auto;
+        display: flex;
+        font-size: 0.7rem;
+        padding:0 0.67rem;
+        gap: 1rem;
+
+    }
+    
+    .Polling-Main-Conatiner input[type="text"]{
+        border-bottom: 2px solid black;
+        border-radius: 0;
+        height: 5vh;
+        width: 90%;
+        font-size: 0.8rem;
+        text-align: center;
+        
+    }
+    .Polling-Main-Conatiner h3{
+        color: black;
+        width: 100%;
+        border-bottom: 1px solid black;
+        text-align: center;
+    }
+    .seleceAddValue input[type="text"]{
+        border: none;
+        border-bottom: 2px solid black;
+        font-size: 0.8rem;
+        height: 4vh;
+        
+    }
+    input[type="radio"]{
+        width: max-content;
+        height: 1.5vh;
+        margin: auto 0;
+        
+    }
+    .seleceAddValue button{
+        height: max-content;
+        padding: 0.1rem 0.5rem;
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        border-radius: 100%;
+    }
+    .Polling-Button{
+        display: flex;
+        flex: 1;
+        font-size: 0.6rem;
+        
+    }
+    .Polling-Button button{
+        height: max-content;
+        padding: 0.2rem 0.5rem;
+        background-color: brown;
+        color: rgb(255, 255, 255);
+        border:none;
+        border-radius:3px;
+    }
+    .option-Conatiner-poll{
+        display: flex;
+        flex-direction: row;
+        gap: 1.3rem;
+        width: 100%;
+        padding: 0.9rem 0;
+        color: black;
+        font-size: 0.78rem;
+        font-weight: 500;
+        justify-content: center;
+    }
+    .option-Conatiner-poll input{
+        margin: 0;
+        padding: 0;
+    }
+   

@@ -1,0 +1,246 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: #00000000;
+}
+body{
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.LandingPage-coantiner{
+  max-width: 100%;
+  padding-top:2rem;
+}
+.LandingPageContent{
+  position: relative;
+  width: 90%;
+  background-image: url("/public/Background_1.avif");
+  background-repeat: no-repeat;
+  background-size:cover ;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 2rem;
+  overflow: auto;
+}
+.LandingPageContent nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.4rem;
+  padding-block:1.6rem ;
+  align-items: center;
+  background-color: #000000;
+}
+.LandingPageContent  .navHeaader{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.LandingPageContent .navlist{
+  display: flex;
+  gap:1.6rem;
+  font-size: 1.1rem;
+  padding: 0 1.6rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.LandingPageContent  .navlist p{
+  background-color: transparent;
+}
+.LandingPageMainContent{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.LandingPageContent :nth-child(2)>div[role='button']{
+  background-color: tomato;
+  padding: 0.18rem 1.2rem;
+  align-items: center;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  border-radius: 10px;
+}
+.LandingPageMainContent .LandingPageMainContent-left{
+  width: 60%;
+  height:80vh;
+  padding:0.8rem 1.0rem ;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin: auto 0;
+  gap:1rem;
+}
+.LandingPageMainContent .LandingPageMainContent-left h1{
+  font-size: 3.5rem;
+  padding-left: 0.2rem;
+  }
+.LandingPageMainContent .LandingPageMainContent-left h1 span{
+  color: tomato;
+}
+.LandingPageMainContent .LandingPageMainContent-left p{
+  margin-bottom: 2rem;
+}
+.LandingPageMainContent .LandingPageMainContent-left button{
+  background-color: tomato;
+  width: max-content;
+  margin: 0 2rem;
+}
+.LandingPageMainContent-right{
+  width:40%;
+  align-content: center;
+  display:flex;
+  justify-content: center;
+}
+.LandingPageMainContent-right img{
+  height: 80%;
+  width: 90%;
+  margin-top:10% ;
+}
+.container {
+  display: flex; 
+  width: 40vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 2rem 0 ;
+  background: linear-gradient(135deg, #df6e6e, #6d98e0);
+  margin-left: 30vw;
+  border-radius:10px ;
+  color: black;
+  background-color: #ff0000;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  width: 80%;  
+}
+label {
+  color: black;
+  text-align: left;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  color: black;
+}
+input:focus {
+  border:2px solid  #000526;
+  box-shadow: 0 0 5px rgba(110, 125, 223, 0.5);
+}
+button {
+  background-color: #913000;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: max-content;
+  margin: 0 auto;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #21379b;
+}
+#signLink {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  align-items: center;
+}
+#signLink a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+#signLink a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .container{
+    margin-left: 20vw;
+    width: 60vw;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  label, input, button {
+    font-size: 0.9rem;
+  }
+  input {
+    padding: 10px;
+  }
+  button {
+    padding: 10px;
+  }
+  .LandingPageMainContent{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .LandingPageMainContent .LandingPageMainContent-left{
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+  }
+  .LandingPageMainContent .LandingPageMainContent-left h1{
+    margin: 0 auto;
+    font-size: 2.4rem;
+    padding: 0;
+  }
+  .LandingPageMainContent .LandingPageMainContent-left p{
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .LandingPageMainContent .LandingPageMainContent-left button{
+    margin: 0 auto;
+  }
+  .LandingPageMainContent-right{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .LandingPageMainContent-right img{
+    width:50%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  #signConatiner {
+    padding: 15px;
+    max-width: 100%;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  input {
+    padding: 8px;
+  }
+  button {
+    padding: 8px;
+  }
+}
