@@ -11,7 +11,7 @@ import StopScreenShareIcon from '@mui/icons-material/StopScreenShare';
 import ChatIcon from '@mui/icons-material/Chat';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
-import '../styles/polling.css'
+import '../styles/Polling.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 let server_url = `${import.meta.env.VITE_BACKEND_URL}`;
