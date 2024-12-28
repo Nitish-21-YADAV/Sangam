@@ -28,7 +28,7 @@ function App() {
           <Route path='/' element={<Summary/>}/>
           <Route path='/SignUp' element={<SignUp/>}/>
           <Route path='/LoginUp' element={<LoginUp/>}/>
-          <Route path='/:url' element={<VideoMeetComponent/>}/>
+          <Route path='/*' element={<VideoMeetComponent/>}/>
           <Route path='/home' element={<Home/>}/>
           <Route path='/history' element={<History/>}/>
         </Routes>
