@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true})) 
 // app.use(cors());
 app.use(cors({
-        origin: 'https://bull-craft-fronthand.vercel.app',
+        origin: 'https://sangam-lake.vercel.app/',
         methods: ['GET', 'POST'],
         allowedHeaders: ['Content-Type'],
       }));
