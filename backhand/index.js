@@ -17,12 +17,12 @@ const jwt = require('jsonwebtoken');
     
 app.use(express.json());
 app.use(express.urlencoded({extended:true})) 
-app.use(cors());
-// app.use(cors({
-//         origin: 'https://sangam-lake.vercel.app/',
-//         methods: ['GET', 'POST'],
-//         allowedHeaders: ['Content-Type'],
-//       }));
+// app.use(cors());
+app.use(cors({
+        origin: 'https://sangam-lake.vercel.app',
+        methods: ['GET', 'POST','UPDATE','DELETE'],
+        allowedHeaders: ['Content-Type'],
+      }));
 app.use(bodyParser.json());
  
 app.post('/SignUp',SignUpValidate)

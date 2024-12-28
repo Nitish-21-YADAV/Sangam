@@ -19,15 +19,12 @@ function LoginUp() {
         eve.preventDefault();
         const email=eve.target.value;
         setLoginEmail(email)
-        
     }
     
     const handleChangePassword = (eve)=>{
         eve.preventDefault();
         const password=eve.target.value;
-        setLoginPassword(password)
-    
-        
+        setLoginPassword(password)       
     }
     
     const handleLoginUpSubmit = async (e)=>{
@@ -41,10 +38,9 @@ function LoginUp() {
 
         if(!email||!password)
         {
-            return handleError('Emial And Pasword are Required');
+            return handleError('Email And Pasword are Required');
         }
         try{
-            
             const url=`${import.meta.env.VITE_BACKEND_URL}/LoginUp`;
             const response =await fetch(url,
                 {
@@ -55,10 +51,7 @@ function LoginUp() {
                 body:JSON.stringify(loginData)    
                 })
                 const result = await response.json();
-                
-                
                 const {success,message,error,jwtToken,email}=result;
-                
                 if(success){
                     handleSuccess(message);
                     localStorage.setItem('token:',jwtToken);
