@@ -9,6 +9,7 @@ function Home() {
     const token = localStorage.getItem("token:")
     const email = localStorage.getItem("email")
     let navigate = useNavigate();
+
     let handleJoinMetting = async()=>{
         try
         {
@@ -53,6 +54,7 @@ function Home() {
 
     return (
         <div className='home'>
+           
             <nav>
                 <h2><span style={{color:"yellow"}}>S</span>angam</h2>
                 <div className='nav-Lfet'>
